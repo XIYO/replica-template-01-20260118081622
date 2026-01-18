@@ -1,9 +1,9 @@
 {
-  "subdomain": "replica-template-01",
-  "title": "AI Agent의 전망과 미래",
-  "description": "AI 에이전트의 핵심 기술, 활용 분야, 그리고 미래 전망을 심층적으로 분석합니다.",
-  "accentColor": "#6366f1",
-  "locale": "ko-KR",
-  "lastUpdated": true,
-  "githubRepo": "XIYO/replica-template-01"
+  "template": "replica-template-01",
+  "accentColor": "#3b82f6",
+  "locale": "ko",
+  "title": "개발자 웰니스",
+  "topic": "개발자 번아웃 예방과 건강한 코딩 라이프",
+  "subdomain": "site-mkjglz1i-gae9",
+  "githubRepo": "xiyo/replica-template-01-20260118081622"
 }

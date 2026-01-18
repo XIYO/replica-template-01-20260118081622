@@ -7,8 +7,8 @@ const siteUrl = `https://${siteConfig.subdomain}.xiyo.dev`
 export default defineConfig({
   title: siteConfig.title,
   description: siteConfig.description,
-  lang: siteConfig.locale,
   lastUpdated: siteConfig.lastUpdated,
+  lang: 'ko-KR',
 
   sitemap: {
     hostname: siteUrl
@@ -25,35 +25,44 @@ export default defineConfig({
   ],
 
   themeConfig: {
+    sidebar: [
+        {
+            "text": "신체적 건강 관리",
+            "items": [
+                {
+                    "text": "인체공학적 작업 환경 구축",
+                    "link": "/physical-wellness/ergonomic-workspace-setup"
+                },
+                {
+                    "text": "5분 스트레칭 루틴",
+                    "link": "/physical-wellness/micro-break-stretching"
+                },
+                {
+                    "text": "시력 보호와 수면 위생",
+                    "link": "/physical-wellness/vision-care-and-sleep"
+                }
+            ]
+        },
+        {
+            "text": "정신적 회복탄력성",
+            "items": [
+                {
+                    "text": "업무와 일상의 심리적 경계 설정",
+                    "link": "/mental-resilience/managing-work-life-boundary"
+                },
+                {
+                    "text": "가면 증후군과 성장 압박 관리",
+                    "link": "/mental-resilience/imposter-syndrome-recovery"
+                },
+                {
+                    "text": "몰입과 휴식의 균형, 딥 워크",
+                    "link": "/mental-resilience/productive-deep-work"
+                }
+            ]
+        }
+    ],
     socialLinks: [
       { icon: 'github', link: `https://github.com/${siteConfig.githubRepo}` }
-    ],
-
-    sidebar: [
-          {
-                text: "개요",
-                items: [
-                      { text: "AI 에이전트란?", link: "/overview/what-is-ai-agent" },
-                      { text: "AI 에이전트의 발전 역사", link: "/overview/evolution-history" },
-                      { text: "현재 기술 수준", link: "/overview/current-state" }
-                ]
-          },
-          {
-                text: "핵심 기술",
-                items: [
-                      { text: "LLM 기반 에이전트", link: "/core-technologies/llm-based-agent" },
-                      { text: "멀티모달 에이전트", link: "/core-technologies/multimodal-agent" },
-                      { text: "자율 에이전트 아키텍처", link: "/core-technologies/autonomous-agent" }
-                ]
-          },
-          {
-                text: "미래 전망",
-                items: [
-                      { text: "기술 발전 방향", link: "/future-outlook/technology-trends" },
-                      { text: "산업별 영향", link: "/future-outlook/industry-impact" },
-                      { text: "윤리적 고려사항", link: "/future-outlook/ethical-considerations" }
-                ]
-          }
     ]
   }
 })
